@@ -3,7 +3,7 @@ let saved_config = JSON.parse(localStorage.getItem("CONFIG"));
 const default_config = {
   overrideStorage: true,
   temperature: {
-    location: 'Matão, São Paulo',
+    location: 'Guarujá, São Paulo',
     scale: "C",
   },
   clock: {
@@ -25,7 +25,7 @@ const default_config = {
   },
   disabled: [],
   localIcons: false,
-  fastlink: "https://chat.openai.com/",
+  fastlink: "https://archive.org",
   openLastVisitedTab: true,
   tabs: [
     {
@@ -41,12 +41,6 @@ const default_config = {
             icon_color: "#a9b665",
           },
           {
-            name: "twitter",
-            url: "https://twitter.com/home",
-            icon: "brand-twitter-filled",
-            icon_color: "#7daea3",
-          },
-          {
             name: "reddit",
             url: "https://www.reddit.com/",
             icon: "brand-reddit",
@@ -57,12 +51,6 @@ const default_config = {
             url: "https://www.youtube.com/",
             icon: "brand-youtube-filled",
             icon_color: "#ea6962",
-          },
-          {
-            name: "twitch",
-            url: "https://www.twitch.tv/",
-            icon: "brand-twitch",
-            icon_color: "#d3869b",
           },
         ],
       }, {
@@ -87,23 +75,7 @@ const default_config = {
             icon_color: "#ea6962",
           },
         ],
-      }, {
-        name: "Video",
-        links: [
-          {
-            name: "disney+",
-            url: "https://www.disneyplus.com/home",
-            icon: "brand-disney",
-            icon_color: "#7daea3",
-          },
-          {
-            name: "primevideo",
-            url: "https://www.primevideo.com/region/eu/?ref_=dv_web_unknown",
-            icon: "brand-amazon",
-            icon_color: "#7daea3",
-          },
-        ],
-      }],
+      }
     },
     {
       name: "design",
@@ -198,12 +170,6 @@ const default_config = {
               url: "https://github.com/",
               icon: "brand-github",
               icon_color: "#7daea3",
-            },
-            {
-              name: "gitlab",
-              url: "https://gitlab.com/",
-              icon: "brand-gitlab",
-              icon_color: "#e78a4e",
             },
           ],
         },
@@ -307,14 +273,7 @@ const default_config = {
         },
         {
           name: "stuff",
-          links: [
-            {
-              name: "linkedin",
-              url: "https://www.linkedin.com/feed/",
-              icon: "brand-linkedin",
-              icon_color: "#7daea3",
-            },
-          ],
+          links: [],
         },
       ],
     },
